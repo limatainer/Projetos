@@ -1,0 +1,118 @@
+body {
+  margin: 0.5;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.superior {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+img {
+  border-radius: 5px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: rgb(216, 109, 109);
+}
+
+.topnav a.active {
+  background-color: rgb(122, 8, 46);
+  color: white;
+}
+/*definir propriedade da imagem principal */
+#banner {
+  width: 100%;
+}
+#banner img {
+  width: 100%;
+  margin-bottom: 0;
+}
+
+/*definir as propriedades dos popups */
+.modalDialog {
+  position: fixed; /*se a pessoa rolar a pagina o conteudo fica fixo */
+  font-family: 'Verdana';
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  /* determinar 0 estamos definindo tamanho de 100% L e A */
+  background: rgba(181, 9, 9, 0.8);
+  z-index: 9999; /* deixa as divs criadas por cima de todo conteudo da pagina */
+  opacity: 0;
+  -webkit-transition: opacity 400ms ease-in;
+  -moz-transition: opacity 400ms ease-in;
+  transition: opacity 400ms ease-in;
+  pointer-events: none;
+  display: none;
+}
+.modalDialog:target {
+  display: block;
+  opacity: 1;
+  pointer-events: auto;
+}
+.modalDialog div {
+  width: 500px;
+  position: relative;
+  margin: 10% auto;
+  padding: 5px 20px 13px 20px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  border-radius: 10px;
+  background-color: #fff;
+}
+.modalDialog p {
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+.modalDialog img {
+  width: 50%;
+  position: relative;
+  margin-left: 25%;
+}
+.close {
+  background-color: #606061;
+  color: #ffffff;
+  line-height: 25px;
+  position: absolute;
+  right: -12px;
+  text-align: center;
+  top: -10px;
+  width: 24px;
+  text-decoration: none;
+  font-weight: bold;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  border-radius: 12px;
+}
+.close:hover {
+  background-color: #cf4040;
+}
+footer {
+  width: 100%;
+  height: 18%;
+  background-color: #d85050;
+  color: #fff;
+  position: relative;
+  float: left;
+  font-family: 'verdana';
+}

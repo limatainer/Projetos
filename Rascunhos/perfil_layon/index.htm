@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Layon é a luz da minha vida</title>
+    <style type="text/css">
+      body {
+        background-color: rgb(234, 253, 63);
+        background-position: center;
+        text-align: center;        
+      }
+      p {
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+          'Lucida Sans', Arial, sans-serif;
+        font-style: oblique;
+        font-weight: bold;
+      }
+      img {
+        border-radius: 50%;
+        max-width: fit-content;
+        height: auto;
+      }
+      .container {
+        position: relative;
+        width: 50%;
+      }
+      .image {
+        opacity: 1;
+        display: block;
+        width: fit-content;
+        height: auto;
+        transition: 0.5s ease;
+        backface-visibility: hidden;
+      }
+      .middle {
+        transition: 0.5s ease;
+        opacity: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+      }
+      .container:hover .image {
+        opacity: 0.3;
+      }
+      .container:hover .middle {
+        opacity: 1;
+      }
+      .text {
+        background-color: #45f54a;
+        color: rgb(255, 255, 255);
+        font-size: 16px;
+        padding: 16px 32px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Layon vai me ensinar!</h1>
+      <h2>Aprendendo tudo de sites</h2>
+      <img src="./img/foto.png" alt="amore" class="image" style="width: 100%" />
+      <div class="middle">
+        <div class="text">Layon Figueiroa</div>
+        <p>Ir para github <button>Let's go</button> <br /></p>
+      </div>
+      <div id="inserts">
+        <label for="uname"> Qual a melhor pessoa do mundo?: </label>
+        <input
+          type="text"
+          id="uname"
+          name="name"
+          placeholder="only lower case letters"
+          size="20"
+        />
+        <input type="submit" value="Get in!" />
+      </div>
+      <h2>Aqui irei praticar JS!</h2>
+      <p>
+        Layon você é incrível por ser amigo e parceiro e acima de tudo irmão.<br />
+        Minha vida de forma alguma seria a mesma sem você!
+      </p>
+    </div>
+    <!--const button = document.querySelector('button'); button.addEventListener('click', event => {
+      button.innerHTML = `Click count: ${event.detail}`;
+});-->
+    <script src="script.js"></script>
+  </body>
+</html>

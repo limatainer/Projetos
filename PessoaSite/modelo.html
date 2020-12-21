@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Idade</title>
+    <link rel="stylesheet" href="estilo.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Verificador de Idade</h1>
+    </header>
+    <section>
+      <div>
+        <p>
+          Ano de Nascimendo:
+          <input type="number" name="txtano" id="txtano" min="0" />
+        </p>
+        <p>
+          Sexo: <input type="radio" name="radsex" id="masc" checked />
+          <!--name igual no masc e fem
+          para evitar marcar os dois ao mesmo tempo e nao conseguir desmarcar-->
+          <label for="mas"> Masculino</label>
+          <input type="radio" name="radsex" id="fem" />
+          <label for="fem">Feminino</label>
+        </p>
+        <p><input type="button" value="Verificar" onclick="verificar()" /></p>
+      </div>
+      <div id="res">Preencha e saiba idade</div>
+    </section>
+    <footer>
+      <p>&copy;MCL</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

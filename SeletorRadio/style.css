@@ -1,0 +1,28 @@
+header {
+  background-image: linear-gradient(90deg, rgb(250, 171, 0), rgb(248, 54, 145));
+  font-family: 'Roboto', sans-serif;
+  padding: 15px;
+  border: 3px solid rgb(247, 25, 25);
+  margin-bottom: 15px;
+}
+#container {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  background-image: linear-gradient(
+    90deg,
+    rgb(190, 105, 240),
+    rgb(248, 54, 145)
+  );
+  border: 3px solid rgb(6, 30, 245);
+  padding-bottom: 10px;
+}
+footer {
+  text-align: center;
+  background-image: linear-gradient(90deg, rgb(250, 171, 0), rgb(248, 54, 145));
+  border: 3px solid rgb(173, 84, 0);
+  padding-bottom: 10px;
+}
+h2,
+label {
+  color: white;
+}

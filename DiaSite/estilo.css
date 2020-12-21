@@ -1,0 +1,29 @@
+body {
+  background: rgb(206, 169, 240);
+  font: normal 15pt Arial;
+}
+header {
+  color: aliceblue;
+  text-align: center;
+}
+section {
+  background: rgb(243, 235, 238);
+  border-radius: 10px; /*borda arredondada*/
+  padding: 15px; /*distancia bordas*/
+  width: 500px; /*largura fixa*/
+  margin: auto; /*centralizar meio da tela*/
+  box-shadow: 5px 5px 10px rgba(43, 2, 2, 0.918); /*sombra na caixa*/
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+div {
+  text-align: center;
+  padding: 10px;
+}
+footer {
+  color: aliceblue;
+  text-align: center;
+  font-style: italic;
+}

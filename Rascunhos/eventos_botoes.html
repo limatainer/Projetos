@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tarefinha</title>
+    <style>
+      .container {
+        background-position: center;
+        background-color: aquamarine;
+        text-align: center;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 30pt;
+      }
+      body {
+        background-color: cadetblue;
+      }
+      .estilo {
+        border: 0;
+        line-height: 2.5;
+        padding: 0 20px;
+        font-size: 1rem;
+        text-align: center;
+        color: #fff;
+        text-shadow: 1px 1px 1px #000;
+        border-radius: 10px;
+        background-color: rgb(202, 38, 38);
+        background-image: linear-gradient(
+          to top left,
+          rgba(0, 0, 0, 0.2),
+          rgba(0, 0, 0, 0.2) 30%,
+          rgba(0, 0, 0, 0)
+        );
+        box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6),
+          inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+      }
+
+      .estilo:hover {
+        background-color: rgb(192, 27, 27);
+      }
+
+      .estilo:active {
+        box-shadow: inset -2px -2px 3px rgba(255, 255, 255, 0.6),
+          inset 2px 2px 3px rgba(0, 0, 0, 0.6);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1 id="title">Tarefinha de Novembro</h1>
+      Usando botões e JS
+      <input class="estilo" id="btn1" type="button" value="Clicame" />
+      <p id="texto">Ou vem aqui</p>
+      <input class="estilo" id="btn2" type="button" value="Clikmin" />
+    </div>
+    <script>
+      document.getElementById('btn1').addEventListener('click', function () {
+        document.getElementById('title').textContent = 'Mudei o Titulo';
+      });
+      document.getElementById('btn2').addEventListener('click', function () {
+        document.getElementById('texto').style.color = 'pink';
+      });
+    </script>
+  </body>
+</html>

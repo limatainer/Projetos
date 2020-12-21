@@ -1,0 +1,54 @@
+abstracao
+herança 
+encapsulamento
+polimorfismo
+
+
+//usar let evita que sobreescreva variareis segunda a ECMA script6 os navegadores estao adotando já o let sempre para tudo
+se eu uso var por causa do hoisting ele fisga as variaveis do local e joga para o global
+normalmente as variaves somem os testes de conndicionais e loops tudo são relocadas reciclados o que foi testado e vai e apaga considerando apenas o que esta global para fins de trabalho gravitacional, pelo hoisting nem sempre isso acontece se eu precisar chamar uma variavel de escopo local para o global ele fara isso para mim, por isso é bom usar o LET
+Se eu tiver let ele não permite hoisting!
+
+*o hoisting na verdade é um problema
+
+//escopos: 
+.global
+. funcao
+. local
+
+*2 formas criar JS tem dinamica gravitacional de cima para baixo
+
+-objeto literal
+Let obsejto = {nome: 'mariana',idade:30}
+console.log(objeto)
+console.log(objeto.nome) //posso chamar so por atributo (caracteristica a cada item do objeto)
+console.log(objeto.idade) //vai me mostrar os parametros
+
+
+-classes
+//nome da classe sempre começa com maiusculo
+*é uma fabrica que fabrica os objeto, é um molde para criar diversos objetos
+
+class Objeto{
+	//tenho que criar um construtor
+	//uso o this para definir que é o atributo do objeto
+   constructor(nome, idade, sexo){
+	this.nome = nome
+	this.idade = idade
+	this.sexo =sexo
+//classes possuem - atributos, metodos(nao retorna valor) ou procedimentos(retorna valor)
+
+
+JSON formato de objeto que posso transformar em string
+
+
+Pegar objetos do mundo real e transformar em classes
+ex cadeira
+classe Cadeira
+construtor
+this.pernas cor tamanho
+
+pode fazer metodos e procedimentos(que tem o return - ainda vamos ver)
+
+fazer pagina html com dados bancarios ao apertar ok vai salvar o saldo
+depois faz o Js depois o css 

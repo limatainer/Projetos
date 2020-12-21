@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carregar Imagem de Perfil</title>
+    <style>
+      body {
+        background-color: #d3d3d3;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>Escolha a sua foto de perfil</h3>
+    <label>Escolha um arquivo:</label>
+    <input type="file" id="arquivo" accept="image/*" /><br /><br />
+    <input type="button" id="ok" value="Ok" />
+    <p id="nomeArquivo"></p>
+
+    <script type="text/javascript">
+      var foto = '';
+      var botao = document.getElementById('ok');
+      botao.addEventListener('click', function () {
+        var nome = document.getElementById('arquivo');
+        if (nome) {
+          for (var i = 0; i < nome.files.length; i++) {
+            var arquivos = nome.files[i];
+            if ('name' in arquivos) {
+              console.log(arquivos.name);
+              foto = arquivos.name;
+            }
+          }
+          localStorage.setItem('foto', foto);
+          window.open('teste_pagina_perfil.html', '_self');
+        } else {
+          window.open('teste_pagina_perfil.html', '_self');
+        }
+      });
+    </script>
+  </body>
+</html>

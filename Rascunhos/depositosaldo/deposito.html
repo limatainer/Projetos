@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-image: linear-gradient(90deg, #00fa9a, #00ced1);
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="bloco">
+      <h1>Medida de saldo</h1>
+      Valor depositado <input type="number" name="nbr1" id="nbr1" /> EUR
+      <input type="button" value="depositar" id="dpst" onclick="adicionar()" />
+      Verificar saldo
+      <input type="button" value="saldo" id="sald" onclick="total()" />
+      <p id="tot"></p>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

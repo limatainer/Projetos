@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Página de perfil</title>
+		<style>
+			body {
+				background-color: #d3d3d3;
+			}
+
+			.fotoPerfil {
+				background-color: #add8e6;
+				width: 400px;
+				text-align: center;
+			}
+
+			.fotoPerfil img {
+				border-radius: 50%;
+				width: 100px;
+				height: 100px;
+			}
+
+			.nomePerfil {
+				background-color: #98fb98;
+				width: 400px;
+				text-align: center;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>Modelo de página de perfil</h1>
+		<div>
+			<div>
+				<div class="fotoPerfil">
+					<img id="foto" src="images/avatar.jpg"><br>
+					<input type="button" id="carregarFoto" value="carregar">
+				</div><!--/foto perfil-->
+				<div class="nomePerfil">
+					<p id="nome"></p>
+				</div><!--/nome perfil-->
+			</div><!--/perfil-->
+		</div><!--/div row-->
+
+		<script type="text/javascript">
+			/*Ao clicar o botão carrega-se a página para
+			alteração da foto do usuário*/
+
+			var botao = document.getElementById("carregarFoto");
+			botao.addEventListener("click", function(){
+				window.open("tteste_carregar_foto.html", "_self");
+			});
+			
+			/*Quando a página carrega totalmente, atualiza o nome
+			do usuário e a foto do perfil de acordo com os valores
+			guardados nas respectivas chaves no localStorage*/
+
+			window.addEventListener("load", function(){
+				var nome = localStorage.getItem("nome");
+				var foto = localStorage.getItem("foto");
+				document.getElementById("nome").textContent = nome;
+				if(foto){
+					document.getElementById("foto").src = 'images/'+ foto;
+				}
+				else{
+					document.getElementById("foto").src = 'images/avatar.jpg';
+				}
+			});
+
+		</script>
+	</body>
+</html>

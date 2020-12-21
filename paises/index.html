@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+
+    <link rel="stylesheet" href="./css/styles.css" />
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <title>Países</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="center">Países</h1>
+
+      <div class="input-field">
+        <input id="inputName" type="text" autofocus />
+        <label for="inputName" class="validate">Pesquisa por nome:</label>
+      </div>
+
+      <div id="filterOptions">
+        <!-- Aqui entram os checkboxes de forma dinâmirca -->
+        <div id="checkboxes"></div>
+
+        <div id="radioButtons">
+          <label class="option">
+            <input id="radioAnd" name="radioGroup" type="radio" />
+            <span>E</span>
+          </label>
+
+          <label class="option">
+            <input id="radioOr" name="radioGroup" type="radio" checked />
+            <span>OU</span>
+          </label>
+        </div>
+      </div>
+
+      <div style="margin-top: 50px" id="divCountries"></div>
+    </div>
+    <script defer src="./js/script.js"></script>
+  </body>
+</html>
