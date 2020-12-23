@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #ecf0f1;
+}
+.content {
+  background-color: #fff;
+  border-radius: 15px;
+  width: 80%;
+  height: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.content::before {
+  content: '';
+  position: absolute;
+  background-color: #58af9b;
+  width: 40%;
+  height: 100%;
+}
+.title {
+  font-size: 28px;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+.title-primary {
+  color: #fff;
+}
+.title-second {
+  color: #58af9b;
+}
+.description {
+  font-size: 14px;
+  font-weight: 300;
+  color: #fff;
+  line-height: 30px;
+}
+.btn {
+  border-radius: 15px;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 10px; /*altera up down*/
+  padding: 10px 50px; /*altera right left*/
+  cursor: pointer; /*a seta vira uma maosinha*/
+  font-weight: bold;
+}
+.btn-primary {
+  background-color: transparent;
+  border: 1px solid #fff;
+}
+.btn-primary:hover {
+  background-color: #fff;
+  color: #58af9b;
+}
+
+.first-content {
+  display: flex;
+}
+.first-column {
+  text-align: center;
+  flex: 1 0 auto;
+  z-index: 10;
+}
+.second-column {
+  flex: 2 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.list-social-media {
+  display: flex;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+}
+.second-content {
+  position: absolute;
+  display: none;
+}
