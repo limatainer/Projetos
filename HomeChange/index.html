@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Nav Menu PortChange</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="menuToggle" onclick="ToggleMenu()"></div>
+    <div class="navigation">
+      <div class="navArea">
+        <ul>
+          <li>
+            <a href="#" onmouseenter="changeImage('./images/img1.jpg')">Home</a>
+          </li>
+          <li>
+            <a href="#" onmouseenter="changeImage('./images/img2.jpg')"
+              >About</a
+            >
+          </li>
+          <li>
+            <a href="#" onmouseenter="changeImage('./images/img3.jpg')"
+              >Projects</a
+            >
+          </li>
+          <li>
+            <a href="#" onmouseenter="changeImage('./images/img4.jpg')"
+              >Serviços</a
+            >
+          </li>
+          <li>
+            <a href="#" onmouseenter="changeImage('./images/img5.jpg')"
+              >Contato</a
+            >
+          </li>
+        </ul>
+      </div>
+      <!--area-->
+      <div class="imgArea">
+        <img src="./images/img1.jpg" id="slider" />
+      </div>
+    </div>
+    <!--Nav-->
+
+    <script src="script.js"></script>
+  </body>
+</html>
