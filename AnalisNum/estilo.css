@@ -1,22 +1,42 @@
-body {
-  background: rgb(255, 253, 111);
-  font: normal 20pt arial;
-}
-header {
-  color: rgb(0, 1, 43);
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Abril Fatface', cursive;
   text-align: center;
 }
+
+body {
+  background: rgba(255, 253, 111, 0.5) url(./images/back.jpg) no-repeat center
+    center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
 section {
-  background: rgb(207, 255, 227);
+  background: rgba(207, 255, 227, 0.5);
   border-radius: 10px;
   padding: 15px;
   width: 500px;
   margin: auto;
   box-shadow: 3px 3px 10px black;
 }
+
+header {
+  color: rgb(0, 1, 83);
+}
+
+.entradas {
+  font-size: 15pt;
+}
+
 select#flista {
   width: 150px;
 }
+
 footer {
   color: rgb(0, 30, 49);
   text-align: center;

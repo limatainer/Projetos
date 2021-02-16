@@ -17,9 +17,10 @@ function calcular() {
   var txtv = document.querySelector('input#txtvel');
   var res = document.querySelector('div#res');
   var vel = Number(txtv.value);
-  res.innerHTML = `<p>Sua velocidade atual e de <i> ${vel}Km/h</i></p>`;
+  res.innerHTML = `<p>Sendo sua velocidade atual de <i> ${vel}Km/h</i></p>`;
   if (vel > 60) {
-    res.innerHTML += `<p>Você será <strong> MULTADO! </strong> por excesso de velocidade</p>`;
+    res.innerHTML += `<p><i class="far fa-thumbs-down"></i> Você será <strong> MULTADO </strong> por excesso de velocidade</p>`;
+  } else {
+    res.innerHTML += `<p> <i class="far fa-thumbs-up"></i> Tudo tranquilo. Dirija sempre com sinto de segurança!</p>`;
   }
-  res.innerHTML += `<p>Dirija sempre com sinto de segurança!</p>`;
 }

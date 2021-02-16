@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Analisador</title>
+    <title>Medidor multa</title>
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
@@ -25,49 +25,27 @@
   </head>
   <body>
     <header>
-      <h1>
-        <i class="fas fa-laptop-code"></i> Analisador repositório de números
-      </h1>
-      <br />
-      <p class="lead">Projeto realizado durante curso de JS da Google</p>
+      <div class="container-sm">
+        <br />
+        <br />
+        <h1><i class="fas fa-car"></i> Sistema de Multas</h1>
+      </div>
     </header>
     <br />
     <br />
-    <section>
-      <div class="entradas">
-        <h3>Números de (1 a 100):</h3>
-        <br />
-        <input type="number" name="fnum" id="fnum" />
-        <input type="button" value="Adicionar" onclick="adicionar()" />
-        <br />
-        <br />
-      </div>
-      <div class="resultado">
-        <select name="flista" id="flista" size="6"></select>
-        <br />
-        <br />
-        <input
-          type="button"
-          value="Finalizar"
-          onclick="finalizar()"
-          id="entra"
-        />
-      </div>
-      <div id="res"></div>
-    </section>
+    <div class="container">
+      <h3>
+        <i class="fas fa-tachometer-alt"></i> Velocidade do Carro
+        <small class="text-muted">Insira seu KM:</small>
+      </h3>
+      <br />
+      <br />
+      <input type="number" name="txtvel" id="txtvel" /> Km/h
+      <input type="button" id="but" value="Verificar" onclick="calcular()" />
+    </div>
     <br />
     <br />
-    <figure class="text-center">
-      <blockquote class="blockquote">
-        <p>
-          Usando <i class="fab fa-bootstrap"></i> e
-          <i class="fab fa-font-awesome-flag"></i> também
-        </p>
-      </blockquote>
-      <figcaption class="blockquote-footer">
-        Pratica leva a perfeição <cite title="Source Title">Anonimo</cite>
-      </figcaption>
-    </figure>
+    <div id="res"></div>
     <div class="fixed-bottom">
       <footer>
         <p><i class="far fa-copyright"></i> MCL</p>
@@ -93,6 +71,6 @@
       integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG"
       crossorigin="anonymous"
     ></script>
-    <script src="script.js"></script>
+    <script src="./js/ex008.js"></script>
   </body>
 </html>

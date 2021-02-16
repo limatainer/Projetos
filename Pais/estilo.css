@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  color: black;
+}
+
+body {
+  background: rgba(0, 0, 0, 0.5) url(./images/mundi.jpg) no-repeat center center
+    fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.container {
+  background: rgba(147, 250, 156, 0.3);
+  border-radius: 50px;
+}
+#cabeca {
+  font-family: 'Monoton', cursive;
+  position: relative;
+  top: 10px;
+}
+#entradas {
+  position: relative;
+  bottom: 10px;
+  font-family: 'Bebas Neue', cursive;
+}
+#saida {
+  font-family: 'Bebas Neue', cursive;
+  font-size: 20pt;
+  background: rgba(147, 250, 156, 0.3);
+  border-radius: 50px;
+  position: relative;
+  top: 10px;
+}

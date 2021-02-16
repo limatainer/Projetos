@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Analisador</title>
+    <title>País que Mora</title>
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
@@ -24,50 +24,29 @@
     <link rel="stylesheet" href="estilo.css" />
   </head>
   <body>
-    <header>
-      <h1>
-        <i class="fas fa-laptop-code"></i> Analisador repositório de números
-      </h1>
+    <br />
+    <br />
+    <div class="container">
+      <div class="container-sm" id="cabeca">
+        <h1>
+          <i class="fas fa-globe-americas"></i> Qual o País que você nasceu?
+        </h1>
+        <br />
+        <h2><i class="fas fa-map-pin"></i> Write your mother country:</h2>
+      </div>
+      <!--cabeca-->
       <br />
-      <p class="lead">Projeto realizado durante curso de JS da Google</p>
-    </header>
-    <br />
-    <br />
-    <section>
-      <div class="entradas">
-        <h3>Números de (1 a 100):</h3>
-        <br />
-        <input type="number" name="fnum" id="fnum" />
-        <input type="button" value="Adicionar" onclick="adicionar()" />
-        <br />
-        <br />
+      <br />
+      <div class="container-sm" id="entradas">
+        <input type="text" name="txtp" id="txtp" />
+        <input type="button" value="Verificar" onclick="calcular()" />
       </div>
-      <div class="resultado">
-        <select name="flista" id="flista" size="6"></select>
-        <br />
-        <br />
-        <input
-          type="button"
-          value="Finalizar"
-          onclick="finalizar()"
-          id="entra"
-        />
-      </div>
+      <!--entradas-->
+    </div>
+    <!--container-->
+    <div class="container-md" id="saida">
       <div id="res"></div>
-    </section>
-    <br />
-    <br />
-    <figure class="text-center">
-      <blockquote class="blockquote">
-        <p>
-          Usando <i class="fab fa-bootstrap"></i> e
-          <i class="fab fa-font-awesome-flag"></i> também
-        </p>
-      </blockquote>
-      <figcaption class="blockquote-footer">
-        Pratica leva a perfeição <cite title="Source Title">Anonimo</cite>
-      </figcaption>
-    </figure>
+    </div>
     <div class="fixed-bottom">
       <footer>
         <p><i class="far fa-copyright"></i> MCL</p>
@@ -93,6 +72,6 @@
       integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG"
       crossorigin="anonymous"
     ></script>
-    <script src="script.js"></script>
+    <script src="./js/ex009.js"></script>
   </body>
 </html>

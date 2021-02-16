@@ -1,13 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  font-family: 'Press Start 2P', cursive;
+}
+
 body {
-  background: rgb(206, 169, 240);
+  background: rgba(206, 169, 240, 0.8) url(./images/cover.jpg) no-repeat center
+    center fixed;
   font: normal 15pt Arial;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 header {
   color: aliceblue;
   text-align: center;
+  position: relative;
+  top: 5rem;
 }
 section {
   background: rgb(243, 235, 238);
+  position: relative;
+  top: 5rem;
   border-radius: 10px; /*borda arredondada*/
   padding: 15px; /*distancia bordas*/
   width: 500px; /*largura fixa*/

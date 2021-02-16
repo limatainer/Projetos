@@ -1,20 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Reggae+One&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  font-family: 'Reggae One', cursive;
+}
+
 body {
-  background: rgb(206, 169, 240);
+  background: rgba(206, 169, 240, 0.8) url(./images/cover.jpg) no-repeat center
+    center fixed;
   font: normal 15pt Arial;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 header {
+  background: rgba(243, 123, 159, 0.8);
+  position: relative;
+  top: 100px;
   color: aliceblue;
   text-align: center;
 }
 section {
-  background: rgb(243, 123, 159);
+  background: rgba(243, 123, 159, 0.8);
+  position: relative;
+  top: 200px;
   border-radius: 10px; /*borda arredondada*/
-  padding: 15px; /*distancia bordas*/
+  padding: 30px; /*distancia bordas*/
   width: 500px; /*largura fixa*/
   margin: auto; /*centralizar meio da tela*/
   box-shadow: 5px 5px 10px rgba(43, 2, 2, 0.918); /*sombra na caixa*/
 }
 footer {
+  background: rgba(243, 123, 159, 0.8);
   color: aliceblue;
   text-align: center;
   font-style: italic;
