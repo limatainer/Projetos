@@ -1,12 +1,12 @@
-# Meus Projetos desenvolvidos em cursos e bootcamps :clipboard:
+# All projects created since I started coding :clipboard:
 
-:bow: Modelos para portifolio
+:bow: This is my portfolio
 
-## Tarefas
+## Projects
 
-O controle das Tarefas desse Projeto estão aqui no Github :octocat:
+Check each project and it's progress :octocat:
 
-## Fique a vontade :)
+## Fique a vontade :) Be my guest
 
 :trophy:
 
