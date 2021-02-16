@@ -24,19 +24,24 @@ function surpresa() {
 
   switch (valorSurpresa) {
     case 'um':
-      primeira.textContent = 'Surpresa 1!';
+      primeira.textContent =
+        'Alguma banda/cantor(a) que você gosta e pensava que quase ninguém conhecia, vai ficar muito conhecida. Você não vai gostar disso. Vai dizer que virou "modinha" e que todos que começaram a gostar dessas músicas depois que elas estouraram são posers.';
       break;
     case 'dois':
-      primeira.textContent = 'Surpresa 2!';
+      primeira.textContent =
+        'Em um momento de distração, você vai abrir uma bala/chiclete, jogá-la no lixo e colocar a embalagem na boca.';
       break;
     case 'treis':
-      primeira.textContent = 'Surpresa 3!';
+      primeira.textContent =
+        'Aquela sua tia vai te fazer perguntas inconvenientes. "Quando vão ter filhos? Tá na hora!", "O tempo esta passando hein!"...';
       break;
     case 'quatro':
-      primeira.textContent = 'Surpresa 4!';
+      primeira.textContent =
+        'No comecinho do ano, você vai fazer sua lista de promessas para os próximos 12 meses. Quase nenhuma delas será cumprida e, no fim do ano, vai perceber que não deseja mais as coisas que escreveu.';
       break;
     case 'cinco':
-      primeira.textContent = 'Surpresa 5!';
+      primeira.textContent =
+        'Alguém vai aparecer com alguma teoria de que o mundo vai acabar nesse ano.';
       break;
   }
 }

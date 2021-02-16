@@ -1,13 +1,26 @@
-body {
-  background: rgb(243, 183, 148);
-  font: normal 20pt arial;
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;700&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  font-family: 'Roboto Mono', monospace;
 }
+
+body {
+  background: url(./images/cover.jpg) no-repeat center center fixed;
+  font: normal 15pt Arial;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
 header {
   color: rgb(240, 254, 255);
   text-align: center;
 }
 section {
-  background: rgb(252, 141, 193);
+  background: rgba(252, 185, 141, 0.582);
   border-radius: 10px;
   padding: 15px;
   width: 500px;

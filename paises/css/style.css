@@ -1,10 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Reggae+One&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  background: url(./images/back.jpg) no-repeat center center fixed;
+}
+
+body {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
 h1 {
   font-size: 2rem;
   font-weight: bolder;
-}
-
-h2 {
-  font-size: 1.8rem;
+  font-family: 'Reggae One', cursive;
 }
 
 .option {

@@ -33,9 +33,20 @@ function verificar() {
       } else {
         img.setAttribute('src', './img/velha.png');
       }
+    } else if (fsex[2].checked) {
+      genero = 'Trans';
+      if (idade >= 0 && idade < 10) {
+        img.setAttribute('src', './img/baby.png');
+      } else if (idade < 21) {
+        img.setAttribute('src', './img/transTeen.jpg');
+      } else if (idade < 50) {
+        img.setAttribute('src', './img/transAd.jpg');
+      } else {
+        img.setAttribute('src', './img/velha.png');
+      }
     }
     res.style.textAlign = 'center';
-    res.innerHTML = `Então é ${genero} com ${idade} anos de idade`;
+    res.innerHTML = `Já que é ${genero} tem ${idade} anos de idade`;
     res.appendChild(img);
   }
 }
